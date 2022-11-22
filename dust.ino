@@ -49,12 +49,12 @@ void loop() {
 
   // Serial.println(calcVolt);
   
-  dustDensity = 170 * calcVolt - 0.1;
+  dustDensity = (170 * calcVolt - 0.1) / 10;
 
   Serial.println(dustDensity);
   
   displayNumber(dustDensity);  
 
-  delay(550);
+  delay(5000); // 10 sec
   
 }
